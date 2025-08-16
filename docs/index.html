@@ -14,9 +14,9 @@
   </head>
   <body>
     <header>
-      <div class="r bg-gray-100 py-3">
+      <div class="w-full bg-gray-100 py-3 text-center md:mx-auto">
         <div
-          class="header-top mx-36 flex items-center justify-between font-extralight text-gray-700"
+          class="header-top ms:text-xs font-extralight text-gray-700 md:mx-36 md:flex md:items-center md:justify-between"
         >
           <div class="left">
             <p>
@@ -25,7 +25,7 @@
             </p>
           </div>
           <div class="right">
-            <ul class="flex items-center justify-between gap-14">
+            <ul class="items-center justify-between gap-14 md:flex">
               <li><a href="">USD</a></li>
               <li><a href="">English</a></li>
               <li><a href="">Sign In</a>/ <a href="">Sign Up</a></li>
@@ -34,21 +34,21 @@
         </div>
       </div>
       <div
-        class="header-middle mx-36 flex items-center justify-between py-5 font-extralight"
+        class="header-middle items-center justify-between text-center font-extralight sm:py-6 md:py-0 md:mx-36 md:flex md:flex-row"
       >
         <div class="logo">
-          <h1 class="text-3xl font-bold">Molla</h1>
+          <h1 class="font-bold md:text-3xl">Molla</h1>
         </div>
-        <div class="search relative flex items-center">
+        <div class="search relative items-center md:flex">
           <input
             type="text"
             name=""
             placeholder="Search product..."
-            class="w-xl border border-gray-200 px-4 py-2 text-sm"
+            class="border border-gray-200 px-4 py-2 text-sm md:w-xl"
           />
           <i class="fa-solid fa-magnifying-glass absolute right-3"></i>
         </div>
-        <div class="cart flex items-center justify-center gap-9">
+        <div class="cart flex items-center justify-center gap-9 py-6">
           <div class="account flex flex-col items-center justify-center">
             <div>
               <i class="fa-regular fa-user text-2xl"></i>
@@ -81,14 +81,14 @@
       </div>
 
       <div
-        class="header-bottom mx-36 flex h-14 items-center justify-between border-t border-gray-200"
+        class="header-bottom grid h-14 grid-cols-1 place-items-center border-t border-gray-200 md:mx-36 md:flex md:justify-between"
       >
-        <div class="flex items-center gap-6 pl-5">
+        <div class="col-span-1 flex items-center gap-6 pl-5">
           <i class="fa-solid fa-bars"></i>
           <h1>Browse Categories</h1>
         </div>
 
-        <ul class="relative m-0 flex h-full items-center p-0">
+        <ul class="col-span-1 hidden h-full p-0 md:flex md:items-center">
           <li
             class="relative flex h-full items-center px-5 after:absolute after:top-0 after:left-0 after:h-[1px] after:w-full after:bg-green-500 after:content-['']"
           >
@@ -172,7 +172,7 @@
           </li>
         </ul>
 
-        <div class="flex items-center gap-5">
+        <div class="col-span-1 flex items-center gap-5">
           <i class="fa-regular fa-lightbulb"></i>
           <h1><span class="text-gray-500">Clearance</span> Up To 30% Off</h1>
         </div>
@@ -263,13 +263,13 @@
       </div>
     </section>
     <!-- banner -->
-    <section class="mx-36 grid [grid-auto-rows:245px] grid-cols-12 gap-4">
+    <section class="grid [grid-auto-rows:245px] grid-cols-12 gap-4 md:mx-36">
       <div class="relative col-span-5 row-span-2 overflow-hidden">
         <img src="banner-1.jpg" alt="" class="absolute h-full w-full" />
         <div class="absolute top-20 left-20 space-y-3">
-          <h1 class="text-3xl leading-0">Coffee Tables</h1>
+          <h1 class="leading-0 md:text-3xl">Coffee Tables</h1>
           <br />
-          <p class="text-3xl font-extralight">from $19.99</p>
+          <p class="font-extralight md:text-3xl">from $19.99</p>
           <a
             href=""
             class="inline-block border border-gray-500 px-5 py-3 text-gray-900"
@@ -279,13 +279,17 @@
       </div>
       <div class="relative col-span-3 row-span-2 overflow-hidden">
         <img src="banner-2.jpg" alt="" class="absolute h-full w-full" />
-        <div class="absolute top-80 left-10 space-y-3 text-white">
-          <h1 class="text-3xl leading-0">Amazing</h1>
+        <div
+          class="absolute top-80 left-2 space-y-3 text-white md:top-80 md:left-10"
+        >
+          <h1 class="leading-0 md:text-3xl">Amazing</h1>
           <br />
-          <h1 class="text-3xl leading-0">Armchairs</h1>
+          <h1 class="leading-0 md:text-3xl">Armchairs</h1>
           <br />
-          <p class="text-3xl font-extralight">from $19.99</p>
-          <a href="" class="inline-block border border-white px-5 py-3"
+          <p class="font-extralight md:text-3xl">from $19.99</p>
+          <a
+            href=""
+            class="inline-block border border-white px-3 py-2 text-xs md:px-5 md:py-3"
             >Discover Now <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -293,9 +297,9 @@
       <div class="relative col-span-4 overflow-hidden">
         <img src="banner-3.jpg" alt="" class="absolute h-full w-full" />
         <div class="absolute top-10 left-10 space-y-3 text-white">
-          <h1 class="text-3xl leading-0">Storage</h1>
+          <h1 class="leading-0 md:text-3xl">Storage</h1>
           <br />
-          <h1 class="text-3xl leading-0">Boxes & Baskets</h1>
+          <h1 class="leading-0 md:text-3xl">Boxes & Baskets</h1>
           <br />
 
           <a href="" class="inline-block border border-white px-5 py-3"
@@ -307,7 +311,7 @@
         <img src="banner-4.jpg" alt="" class="absolute h-full w-full" />
 
         <div class="absolute top-10 left-10 space-y-3">
-          <h1 class="text-3xl leading-0">Lamps Offer</h1>
+          <h1 class="leading-0 md:text-3xl">Lamps Offer</h1>
           <br />
 
           <p class="text-3xl font-extralight">Up to 30% off</p>
@@ -653,9 +657,11 @@
     </section>
     <!-- deal -->
 
-    <section class="bg-gray-100 px-36 py-15">
+    <section class="bg-gray-100 py-15 md:px-36">
       <div class="grid grid-cols-12 gap-4 bg-white">
-        <div class="col-span-9 flex items-center justify-center py-3 pl-10">
+        <div
+          class="col-span-12 flex items-center justify-center py-3 pl-10 md:col-span-9"
+        >
           <div class="deal flex-1 space-y-6">
             <h1 class="text-4xl font-bold">
               <span class="text-xl font-normal text-green-400"
@@ -672,25 +678,25 @@
                 >
               </h2>
             </div>
-            <div class="mb-20 flex items-center justify-start">
+            <div class="items-center justify-start md:mb-20 md:flex">
               <div
-                class="mr-4 inline-block items-center justify-center bg-green-500 px-4 py-5 text-center"
+                class="mr-4 inline-block items-center justify-center bg-green-500 px-3 py-5 text-center md:px-4"
               >
-                <h1 class="text-3xl font-bold text-white">00</h1>
+                <h1 class="font-bold text-white md:text-3xl">00</h1>
                 <p class="text-white">hrs</p>
               </div>
               :
               <div
-                class="mx-4 inline-block items-center justify-center bg-green-500 px-4 py-5 text-center"
+                class="mx-4 inline-block items-center justify-center bg-green-500 px-3 py-5 text-center md:px-4"
               >
-                <h1 class="text-3xl font-bold text-white">00</h1>
+                <h1 class="font-bold text-white md:text-3xl">00</h1>
                 <p class="text-white">hrs</p>
               </div>
               :
               <div
-                class="mx-4 inline-block items-center justify-center bg-green-500 px-4 py-5 text-center"
+                class="mx-4 inline-block items-center justify-center bg-green-500 px-3 py-5 text-center md:px-4"
               >
-                <h1 class="text-3xl font-bold text-white">00</h1>
+                <h1 class="font-bold text-white md:text-3xl">00</h1>
                 <p class="text-white">hrs</p>
               </div>
             </div>
@@ -703,7 +709,7 @@
           </div>
         </div>
 
-        <div class="relative col-span-3 flex">
+        <div class="relative col-span-12 flex md:col-span-3">
           <div class="absolute inset-0 space-y-6 pt-10 text-center">
             <h1 class="font-bold">
               <span class="font-light">The Best Choice</span><br />AGENT
@@ -722,7 +728,7 @@
       <div class="pt-20 text-center">
         <h1 class="mb-4 text-3xl font-bold">Top Selling Products</h1>
         <div>
-          <ul class="flex justify-center gap-10 font-light">
+          <ul class="justify-center gap-10 font-light md:flex">
             <li class="border-b px-4 py-3">ALL</li>
             <li class="px-4 py-3 text-gray-400">FURNITURE</li>
             <li class="px-4 py-3 text-gray-400">DECORATION</li>
@@ -730,16 +736,18 @@
           </ul>
         </div>
         <div
-          class="top-selling mx-36 mt-10 flex flex-wrap items-center justify-center gap-4 border-b border-gray-300 [--g:1rem]"
+          class="top-selling mt-10 flex-wrap items-center justify-center gap-4 border-b border-gray-300 [--g:1rem] md:mx-36 md:flex"
         >
           <div class="aspect-[3/5] shrink-0 basis-[calc((100%-var(--g)*4)/5)]">
             <div
               class="group relative h-full w-full transition-all duration-300 ease-linear hover:border hover:border-orange-400 hover:shadow-xl"
             >
               <div
-                class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
+                class="absolute inset-0 z-1 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-8-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-8-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -751,7 +759,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-8-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-8-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -769,7 +779,9 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-9-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-9-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -781,7 +793,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-9-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-9-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -799,7 +813,10 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-10-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-10-1.jpg" alt="" />
+                </div>
+
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -811,7 +828,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-10-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-10-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -829,7 +848,9 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-11-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-11-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -841,7 +862,10 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-11-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-11-2.jpg" alt="" />
+                </div>
+
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -859,7 +883,9 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-8-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-8-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -871,7 +897,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-8-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-8-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -889,7 +917,9 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-12-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-12-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -901,7 +931,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-12-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-12-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -919,7 +951,9 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-13-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-13-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -931,7 +965,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-13-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-13-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -949,7 +985,9 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-14-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-14-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -961,7 +999,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-14-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-14-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -979,7 +1019,9 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-15-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-15-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -991,7 +1033,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-15-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-15-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -1009,7 +1053,9 @@
               <div
                 class="absolute inset-0 z-1 text-center opacity-100 transition-opacity duration-400 ease-linear group-hover:z-0 group-hover:opacity-0"
               >
-                <img src="product-16-1.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-16-1.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2>$251,00</h2>
               </div>
@@ -1021,7 +1067,9 @@
                   class="absolute top-5 right-5 flex h-10 w-10 -translate-x-5 items-center justify-center rounded-full border border-gray-300 transition-all duration-300 ease-linear group-hover:translate-x-0"
                   ><i class="fa-solid fa-heart"></i
                 ></a>
-                <img src="product-16-2.jpg" alt="" />
+                <div class="flex w-full items-center justify-center">
+                  <img src="product-16-2.jpg" alt="" />
+                </div>
                 <h1>Butler Stool Ladder</h1>
                 <h2 class="mb-8">$251,00</h2>
                 <a
@@ -1037,11 +1085,11 @@
     </section>
 
     <!-- blog -->
-    <section class="mx-36 mb-20">
+    <section class="m-4 mb-20 md:mx-36">
       <div class="pt-20 text-center">
         <h1 class="mb-4 text-3xl font-bold">From Our Blog</h1>
         <div class="mb-8">
-          <ul class="flex justify-between gap-4">
+          <ul class="justify-between gap-4 md:flex">
             <div
               class="space-y-4 pb-20 transition-all duration-400 ease-linear hover:shadow-xl"
             >
@@ -1097,30 +1145,30 @@
     </section>
 
     <!-- shipping -->
-    <section class="bg-gray-100">
-      <div class="mx-36 flex items-center justify-between py-10">
-        <div class="flex items-center gap-6">
+    <section class="grid grid-cols-1 bg-gray-100">
+      <div class="items-center py-10 md:mx-36 md:flex md:justify-between">
+        <div class="flex items-center justify-center gap-6">
           <i class="fa-solid fa-rocket text-4xl"></i>
           <div>
             <h1 class="font-bold">Free Shipping</h1>
             <p class="text-xs font-extralight">orders $50 or more</p>
           </div>
         </div>
-        <div class="flex items-center gap-6">
+        <div class="flex items-center justify-center gap-6">
           <i class="fa-solid fa-rotate-left text-4xl"></i>
           <div>
             <h1 class="font-bold">Free Return</h1>
             <p class="text-xs font-extralight">within 30 days</p>
           </div>
         </div>
-        <div class="flex items-center gap-6">
+        <div class="flex items-center justify-center gap-6">
           <i class="fa-solid fa-circle-info text-4xl"></i>
           <div>
             <h1 class="font-bold">Get 20% Off 1 Item</h1>
             <p class="text-xs font-extralight">When you sign up</p>
           </div>
         </div>
-        <div class="flex items-center gap-6">
+        <div class="flex items-center justify-center gap-6">
           <i class="fa-solid fa-life-ring text-4xl"></i>
           <div>
             <h1 class="font-bold">We Support</h1>
@@ -1132,27 +1180,29 @@
 
     <!-- CTA -->
     <section
-      class="flex flex-col items-center justify-center gap-6 bg-[url('bg-2.jpg')] py-10"
+      class="flex-col items-center justify-center gap-6 bg-[url('bg-2.jpg')] py-10 sm:m-4 md:m-0 md:flex"
     >
       <h1 class="text-2xl text-white">Get The Latest Deals</h1>
       <p class="font-extralight text-white">
         and receive <span class="font-normal">$20 coupon</span> for first
         shopping
       </p>
-      <form class="search relative mx-auto flex items-center bg-white">
+      <form class="search relative mx-auto items-center bg-white md:flex">
         <input
           type="text"
           name=""
           placeholder="Enter your email address..."
-          class="w-xl border border-gray-200 px-4 py-2 text-sm placeholder:text-gray-500"
+          class="w-full border border-gray-200 px-4 py-2 text-sm placeholder:text-gray-500 md:w-xl"
         />
         <a href="" class="absolute right-0 px-5 text-sm text-gray-700"
           >Subscribe <i class="fa-solid fa-arrow-right text-gray-700"></i
         ></a>
       </form>
     </section>
-    <footer>
-      <div class="mx-36 grid grid-cols-2 gap-4 border-b border-gray-300 py-8">
+    <footer class="m-4">
+      <div
+        class="grid-cols-2 gap-4 border-b border-gray-300 py-8 md:mx-36 md:grid"
+      >
         <div class="space-y-6">
           <h1 class="text-3xl font-bold">Molla</h1>
           <p class="text-sm font-light text-gray-400">
@@ -1160,7 +1210,7 @@
             augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
             dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
           </p>
-          <div class="grid grid-cols-12 text-xs font-extralight">
+          <div class="grid-cols-12 text-xs font-extralight md:grid">
             <div class="col-span-4 space-y-4">
               <h1>Got Question? Call us 24/7</h1>
               <p class="text-2xl text-green-700">+84 985 134 094</p>
@@ -1171,7 +1221,7 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-3">
+        <div class="grid-cols-3 md:grid">
           <div class="space-y-4">
             <h1 class="text-xl">Information</h1>
             <ul class="space-y-4 text-sm font-extralight text-gray-500">
@@ -1210,9 +1260,9 @@
         </div>
       </div>
       <div
-        class="mx-36 flex items-center justify-between py-8 text-sm font-light"
+        class="items-center justify-between py-8 text-center text-sm font-light md:mx-36 md:flex"
       >
-        <div class="flex">
+        <div class="flex-1 md:flex">
           <p>Copyright © 2019 Molla Store. All Rights Reserved.</p>
           <a
             href=""
@@ -1226,7 +1276,7 @@
             >Privacy Policy</a
           >
         </div>
-        <div class="flex items-center gap-6">
+        <div class="items-center gap-6 md:flex">
           <p>Social Media</p>
           <a href=""><i class="fa-brands fa-facebook-f text-blue-500"></i></a>
           <a href=""><i class="fa-brands fa-twitter text-blue-300"></i></a>
