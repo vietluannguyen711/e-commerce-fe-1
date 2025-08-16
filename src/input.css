@@ -4,7 +4,10 @@
   @apply border-t-1 border-t-green-500;
 }
 
-@utility active-top-transition{
-    @apply w-full transition-all duration-300 
+@utility active-top-transition {
+  @apply w-full transition-all duration-300;
 }
 
+@utility card {
+    @apply 
+}
