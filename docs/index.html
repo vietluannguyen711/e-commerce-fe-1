@@ -730,7 +730,7 @@
           </ul>
         </div>
         <div
-          class="top-selling mx-36 mt-10 flex flex-wrap items-center justify-center gap-4 [--g:1rem] border-b border-gray-300"
+          class="top-selling mx-36 mt-10 flex flex-wrap items-center justify-center gap-4 border-b border-gray-300 [--g:1rem]"
         >
           <div class="aspect-[3/5] shrink-0 basis-[calc((100%-var(--g)*4)/5)]">
             <div
@@ -1040,9 +1040,11 @@
     <section class="mx-36">
       <div class="pt-20 text-center">
         <h1 class="mb-4 text-3xl font-bold">From Our Blog</h1>
-        <div>
+        <div class="mb-8">
           <ul class="flex justify-between gap-4">
-            <div class="space-y-4">
+            <div
+              class="space-y-4 pb-20 transition-all duration-400 ease-linear hover:shadow-xl"
+            >
               <img src="post-1.jpg" alt="" />
               <div class="text-sm font-extralight text-gray-400">
                 Nov 22, 2018, 0 Comments
@@ -1054,7 +1056,9 @@
                 >Continue Reading</a
               >
             </div>
-            <div class="space-y-4">
+            <div
+              class="space-y-4 pb-20 transition-all duration-400 ease-linear hover:shadow-xl"
+            >
               <img src="post-2.jpg" alt="" />
               <div class="text-sm font-extralight text-gray-400">
                 Nov 22, 2018, 0 Comments
@@ -1066,7 +1070,9 @@
                 >Continue Reading</a
               >
             </div>
-            <div class="space-y-4">
+            <div
+              class="space-y-4 pb-20 transition-all duration-400 ease-linear hover:shadow-xl"
+            >
               <img src="post-3.jpg" alt="" />
               <div class="text-sm font-extralight text-gray-400">
                 Nov 22, 2018, 0 Comments
@@ -1082,6 +1088,11 @@
             <div></div>
           </ul>
         </div>
+        <a
+          href=""
+          class="inline-block px-6 py-2 font-extralight hover:bg-green-500 transition-all duration-400 ease-linear"
+          >View More Articles<i class="fa-solid fa-arrow-right"></i
+        ></a>
       </div>
     </section>
   </body>
